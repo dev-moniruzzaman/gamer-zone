@@ -213,7 +213,7 @@ nav {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 27px;
+  gap: 22px;
   margin: 0 249px;
 }
 .btn-section .button {
@@ -227,10 +227,73 @@ nav {
   gap: 16px;
   padding: 0 15px;
 }
+.button:hover {
+  border: 2px solid #f948b2;
+}
 .btn-section .button p {
   color: #0b0223;
   font-weight: 600;
   font-size: 20px;
+}
+
+/* footer related style */
+.footer {
+  background-color: #0b0223;
+  height: 636px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.footer-logo,
+.footer-option,
+.footer-link,
+.footer-text-link {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+.footer-logo h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.footer-logo h2 span {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer-option p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer-option {
+  gap: 60px;
+}
+.footer-link {
+  gap: 40px;
+}
+.footer-link a {
+  color: #fff;
+  font-size: 30px;
+}
+.footer-text-link p,
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer-text-link {
+  gap: 60px;
+}
+.copyright {
+  margin-top: 28px;
+  text-align: center;
 }
 
 /* for mobile devices */
@@ -242,13 +305,13 @@ nav {
   }
   nav {
     height: 100%;
-    padding: 90px 0;
+    padding: 50px 0;
   }
   .nav-des {
     gap: 0;
   }
   .nav-des .nav-content {
-    margin: 50px 0;
+    margin: 30px 0;
   }
   .play-section-container {
     flex-direction: column-reverse;
@@ -326,6 +389,19 @@ nav {
     height: 30px;
     width: 30px;
   }
+
+  .footer {
+    padding: 30px 10px;
+    gap: 50px;
+  }
+  .footer-option,
+  .footer-link,
+  .footer-text-link {
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    padding: 0 100px;
+  }
 }
 
 /* for tablet devices */
@@ -351,7 +427,7 @@ nav {
     height: 100%;
     margin: 0 auto;
   }
-  
+
   .play-instantly-content-container {
     width: auto;
     padding: 40px 50px;
@@ -388,5 +464,14 @@ nav {
   .btn-section img {
     height: 40px;
     width: 40px;
+  }
+  .footer-option,
+  .footer-link,
+  .footer-text-link {
+    flex-wrap: wrap;
+  }
+
+  .footer-option {
+    gap: 25px;
   }
 }
