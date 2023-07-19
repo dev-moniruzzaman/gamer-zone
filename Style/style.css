@@ -7,8 +7,6 @@
 body {
   max-width: 1920px;
   font-family: "Work Sans", sans-serif;
-  background: #fff;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 /* navbar related style */
@@ -17,6 +15,8 @@ nav {
   height: 130px;
   align-items: center;
   justify-content: space-around;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .nav-logo {
   display: flex;
@@ -144,6 +144,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .online-game-card-container .card img {
   width: 342px;
@@ -152,6 +153,45 @@ nav {
 .online-game-card-container .card p {
   width: 342px;
   margin: 20px 0;
+}
+
+/* play-instantly section related style */
+.play-instantly-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 240px;
+}
+.play-instantly-content {
+  margin: 0 auto;
+}
+.play-instantly-content span {
+  color: #f948b2;
+}
+.play-instantly-content h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  width: 353px;
+  text-align: right;
+}
+.play-instantly-content p {
+  color: #534c64;
+  width: 353px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: right;
+}
+.play-instantly-img .im1 {
+  width: 650px;
+  height: 650px;
+}
+.relative-img .img2 {
+  width: 318px;
+  height: 365px;
+  border-radius: 8px;
+  position: relative;
+  bottom: 250px;
+  right: 145px;
 }
 
 /* for mobile devices */
@@ -183,7 +223,7 @@ nav {
     width: auto;
     height: 100%;
     margin: 30px 20px;
-    padding: 20px;
+    padding: 40px 20px;
     align-items: center;
   }
   .play-section h2 {
@@ -202,6 +242,27 @@ nav {
   }
   .online-game-card-container {
     flex-direction: column;
+  }
+  .play-instantly-content-container {
+    flex-direction: column;
+    padding: 30px 40px;
+  }
+  .play-instantly-content h3,
+  .play-instantly-content p {
+    width: 90%;
+    text-align: left;
+  }
+  .play-instantly-img .img1 {
+    width: 80%;
+    margin-left: 100px;
+  }
+
+  .relative-img .img2 {
+    width: 40%;
+    height: 50%;
+    border-radius: 8px;
+    bottom: 120px;
+    left: 20px;
   }
 }
 
@@ -228,7 +289,23 @@ nav {
     height: 100%;
     margin: 0 auto;
   }
-  .online-game-card-container {
-    flex-wrap: wrap;
+  .play-instantly-content-container {
+    width: auto;
+    padding: 40px 50px;
+    gap: 24px;
+  }
+  .play-instantly-img .img1 {
+    width: 80%;
+  }
+  .relative-img .img2 {
+    width: 50%;
+    height: 60%;
+    bottom: 80px;
+    right: 60px;
+  }
+  .play-instantly-content h3,
+  .play-instantly-content p {
+    text-align: left;
+    width: 90%;
   }
 }
