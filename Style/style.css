@@ -293,7 +293,7 @@ nav {
   display: flex;
   gap: 20px;
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
 }
 .footer-logo h2 {
   color: #fff;
@@ -439,6 +439,7 @@ nav {
   }
 
   .footer {
+    height: auto;
     padding: 50px 10px;
     gap: 40px;
   }
@@ -446,9 +447,13 @@ nav {
   .footer-link,
   .footer-text-link {
     flex-wrap: wrap;
+    align-content: center;
   }
   .footer-link {
     padding: 0 100px;
+  }
+  .copyright {
+    line-height: 2;
   }
 }
 
